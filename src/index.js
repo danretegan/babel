@@ -10,3 +10,5 @@ console.log(contact);
 console.log(test);
 
 console.log(getPremUsers(test));
+
+console.log("test -w");
