@@ -6,7 +6,6 @@ module.exports = {
     path: path.resolve(__dirname, "dist/assets"),
     filename: "bundle.js",
   },
-
   devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),
@@ -15,5 +14,19 @@ module.exports = {
       publicPath: "/assets/",
     },
     port: 8080, //* Se poate specifica un port personalizat
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+    ],
   },
 };
