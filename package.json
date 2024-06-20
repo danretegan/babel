@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "babel": "babel src/index.js -w -o dist/assets/bundle.js"
+    "babel": "babel src/index.js -w -o dist/assets/bundle.js",
+    "webpack": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
   "devDependencies": {
     "@babel/cli": "^7.24.7",
     "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7"
+    "@babel/preset-env": "^7.24.7",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
   }
 }

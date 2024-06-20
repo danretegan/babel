@@ -4,6 +4,6 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist/assets"),
-    filename: "nundle.js",
+    filename: "bundle.js",
   },
 };
