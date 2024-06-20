@@ -1,11 +1,10 @@
 {
-  "name": "babel",
+  "name": "babel-webpack",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel before.js -o after.js"
+    "babel": "babel src/index.js -w -o dist/assets/bundle.js"
   },
   "keywords": [],
   "author": "",
