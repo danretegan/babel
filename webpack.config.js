@@ -6,7 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist/assets"),
     filename: "bundle.js",
   },
-  mode: "development", //* Sau "production" în funcție de necesități
+
   devServer: {
     static: {
       directory: path.resolve(__dirname, "dist"),
